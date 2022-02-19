@@ -1,0 +1,18 @@
+.menu {
+  @include clear-list();
+
+  display: flex;
+  flex-flow: wrap;
+}
+
+.menu__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.menu__link {
+  font-size: $font-size-menu;
+  font-weight: $font-weight-menu;
+  color: #fff;
+}
