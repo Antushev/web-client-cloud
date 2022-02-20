@@ -1,0 +1,40 @@
+.files__header-2 {
+  margin-bottom: 10px;
+}
+
+.files__table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.files__th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  color: #ffffff;
+  text-align: left;
+
+  background-color: $background-blue;
+
+  &:first-child {
+    padding-left: 10px;
+  }
+}
+
+.files__td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  min-width: 25%;
+
+  &:first-child {
+    padding-left: 10px;
+  }
+
+  &--download {
+    text-decoration: underline;
+
+    cursor: pointer;
+  }
+}

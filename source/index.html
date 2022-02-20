@@ -16,22 +16,103 @@
       <nav class="page-header__menu container container--menu">
         <img class="logo" src="img/logo.png" width="180" height="30" alt="Логотип Cube.Cloud">
 
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link">Настройки</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link">Подключенные устройства</a>
-          </li>
-        </ul>
+        <div class="menu__wrapper">
+          <button class="menu__button">
+            <div class="menu__button-line"></div>
+            <div class="menu__button-line"></div>
+            <div class="menu__button-line"></div>
+          </button>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link">Настройки</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active">Подключенные устройства</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main class="page-content">
+      <div class="header-section container">
+        <h1 class="header-section__header header header--1 container">Подключённые устройства</h1>
+      </div>
 
+      <section class="page-content__devices devices">
+        <div class="devices__inner container">
+          <h2 class="devices__header-2 header header--2">Список добавленных устройств</h2>
+
+          <ul class="devices-list">
+            <li class="devices-list__item devices-list__item--active">
+              <div class="devices-list__status">
+                Онлайн
+              </div>
+              <div class="devices-list__name">
+                Orange Pi (Antushev)
+              </div>
+            </li>
+            <li class="devices-list__item">
+              <div class="devices-list__status">
+                Онлайн
+              </div>
+              <div class="devices-list__name">
+                Orange Pi (Antushev)
+              </div>
+            </li>
+            <li class="devices-list__item">
+              <div class="devices-list__status">
+                Онлайн
+              </div>
+              <div class="devices-list__name">
+                Orange Pi (Antushev)
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page-content__carriers carriers">
+        <div class="carriers__inner container">
+          <h2 class="carriers__header-2 header header--2">Список подключенных носителей</h2>
+
+          <ul class="carriers-list">
+            <li class="carriers-list__item">
+              <div class="carriers-list__name">FILES</div>
+              <div class="carriers-list__status">онлайн</div>
+            </li>
+            <li class="carriers-list__item">
+              <div class="carriers-list__name">FILES</div>
+              <div class="carriers-list__status">онлайн</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page-content__files files">
+        <div class="files__inner container">
+          <h2 class="files__header-2 header header--2">Файлы</h2>
+
+          <table class="files__table">
+            <tr>
+              <th class="files__th">Имя</th>
+              <th class="files__th">Тип</th>
+              <th class="files__th">Размер</th>
+              <th class="files__th">Действие</th>
+            </tr>
+
+            <tr>
+              <td class="files__td">Test.txt</td>
+              <td class="files__td">.txt</td>
+              <td class="files__td">14 KB</td>
+              <td class="files__td files__td--download">Скачать</td>
+            </tr>
+          </table>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">

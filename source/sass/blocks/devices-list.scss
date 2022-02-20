@@ -1,0 +1,46 @@
+.devices-list {
+  @include clear-list();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.devices-list__item {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+
+  background-color: #ffffff;
+
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    flex: 1 1 auto;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+
+  &:hover {
+    color: #fff;
+
+    background-color: $background-blue;
+
+    cursor: pointer;
+  }
+
+  &--active {
+    color: #ffffff;
+
+    background-color: $background-blue;
+  }
+}

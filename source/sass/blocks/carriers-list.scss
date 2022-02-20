@@ -1,0 +1,22 @@
+.carriers-list {
+  @include clear-list();
+
+  display: flex;
+}
+
+.carriers-list__item {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  color: #ffffff;
+
+  background-color: $background-blue;
+
+  border-radius: 10px;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
